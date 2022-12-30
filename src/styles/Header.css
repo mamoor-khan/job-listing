@@ -1,5 +1,5 @@
 header {
-    background-image: url('images/bg-header-desktop.svg');
+    background-image: url('/images/bg-header-desktop.svg');
     height: 90px;
     width: 100%;
     background-size: cover;
