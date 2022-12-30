@@ -1,0 +1,7 @@
+.list--container {
+    background-color: var(--secondary);
+    gap: 1em;
+    padding-block: 3em;
+    padding-inline: 6em;
+    position: relative;
+}

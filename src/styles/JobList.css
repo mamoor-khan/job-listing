@@ -1,0 +1,63 @@
+.job--container {
+    padding: 1.5em 2em;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 20px;
+    border-radius: 4px;
+    gap: 0.8em;
+}
+
+.job--container:hover {
+    border-left: 4px solid var(--primary);
+    padding-left: calc(2em - 4px);
+}
+
+.company--logo>img {
+    display: block;
+}
+
+.company--details {
+    gap: 0.4em;
+}
+
+.company--name {
+    gap: 0.8em;
+}
+
+.company--name>p {
+    color: var(--primary);
+}
+
+.location--container {
+    color: var(--dark-cyan);
+    font-weight: 400;
+    gap: 2em;
+}
+
+.location--container>small:not(:last-child) {
+    position: relative;
+}
+
+.location--container>small:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    width: 5px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: currentColor;
+    right: -1em;
+    top: 50%;
+    translate: 100% -50%;
+}
+
+.badge--container {
+    flex-grow: 1;
+    justify-content: flex-end;
+    gap: 1em;
+    user-select: none;
+    cursor: pointer;
+}
+
+.badge--container .badge:hover {
+    color: var(--secondary);
+    background-color: var(--primary);
+}
