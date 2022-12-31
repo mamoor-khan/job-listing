@@ -11,7 +11,7 @@
     padding-left: calc(2em - 4px);
 }
 
-.company--logo>img {
+.company--logo--container>img {
     display: block;
 }
 
@@ -55,9 +55,41 @@
     gap: 1em;
     user-select: none;
     cursor: pointer;
+    flex-wrap: wrap;
 }
 
 .badge--container .badge:hover {
     color: var(--secondary);
     background-color: var(--primary);
+}
+
+@media screen and (max-width: 756px) {
+    .job--container {
+        flex-direction: column;
+        align-items: flex-start !important;
+        padding-inline: 1.6em;
+        position: relative;
+        padding-block-start: 2.5em;
+    }
+    .job--container:hover {
+        padding-left: calc(1.6em - 4px);
+    }
+    .company--logo--container {
+        position: absolute;
+        top: -28px;
+    }
+    .company--logo--img {
+        width: 56px;
+        aspect-ratio: 1;
+    }
+    .company--details {
+        width: 100%;
+        border-bottom: 1px solid var(--dark-cyan);
+    }
+    .badge--container {
+        justify-content: flex-start;
+    }
+    .location--container {
+        padding-block-end: 0.7em;
+    }
 }

@@ -12,7 +12,8 @@
 
 .filters {
     flex-grow: 1;
-    gap: 1.8em;
+    gap: 1em 2em;
+    flex-wrap: wrap;
 }
 
 .clear--button {
@@ -62,4 +63,16 @@
 
 .badge--remove--icon:hover {
     background-color: var(--ed-cyan);
+}
+
+@media screen and (max-width: 956px) {
+    .filter--container {
+        width: calc(100% - 6em);
+    }
+}
+
+@media screen and (max-width: 756px) {
+    .filter--container {
+        width: calc(100% - 2em);
+    }
 }

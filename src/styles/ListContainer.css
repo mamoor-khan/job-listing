@@ -5,3 +5,18 @@
     padding-inline: 6em;
     position: relative;
 }
+
+@media screen and (max-width: 956px) {
+    .list--container {
+        padding-block: 2em;
+        padding-inline: 3em;
+    }
+}
+
+@media screen and (max-width: 756px) {
+    .list--container {
+        gap: 3em;
+        padding-block-start: 5em !important;
+        padding-inline: 1em;
+    }
+}

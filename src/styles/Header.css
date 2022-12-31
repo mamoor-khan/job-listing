@@ -6,3 +6,9 @@ header {
     background-repeat: no-repeat;
     background-color: var(--primary);
 }
+
+@media screen and (max-width: 600px) {
+    header {
+        background-image: url('/images/bg-header-mobile.svg');
+    }
+}
