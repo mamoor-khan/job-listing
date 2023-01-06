@@ -20,7 +20,7 @@ const Form = () => {
           <input
             type='text'
             name='userName'
-            autoComplete='new-password'
+            autoComplete='off'
             value={signInForm.userName}
             onChange={(e) =>
               setSignInForm({ ...signInForm, [e.target.name]: e.target.value })
@@ -32,7 +32,7 @@ const Form = () => {
           <input
             type='password'
             name='password'
-            autoComplete='new-password'
+            autoComplete='off'
             value={signInForm.password}
             onChange={(e) =>
               setSignInForm({ ...signInForm, [e.target.name]: e.target.value })
