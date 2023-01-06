@@ -17,7 +17,7 @@ const Form = () => {
   return (
     <div className='form--page'>
       <form method='POST' onSubmit={submitForm} autoComplete='off'>
-        <h4>POC-4</h4>
+        <h4>POC-5</h4>
         <div className='form--group'>
           <label htmlFor=''>Username</label>
           <input
@@ -34,7 +34,7 @@ const Form = () => {
               username.current.removeAttribute('readonly')
             }}
             onBlur={() => {
-              username.current.addAttribute('readonly')
+              username.current.setAttribute('readonly', true)
             }}
           />
         </div>
@@ -54,7 +54,7 @@ const Form = () => {
               pwd.current.removeAttribute('readonly')
             }}
             onBlur={() => {
-              pwd.current.addAttribute('readonly')
+              pwd.current.setAttribute('readonly', true)
             }}
           />
         </div>
